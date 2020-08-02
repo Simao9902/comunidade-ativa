@@ -9,15 +9,15 @@
     <header class="header">
         <div>
             <a href="Index.php">
-                <img src="Comunidade Ativa v2.png" width="300px" height="170px"> 
+                <img src="Comunidade Ativa v4.png" width="300px" height="170px"> 
             </a>                                 
         </div>
 
     </header>
 
     <main class="main1">
-        <h1 class="titulo">Faça sua queixa aqui!</h1>
-        <form action="Script.php" method="POST">
+        <h1 class="titulo">Faça sua queixa aqui</h1>
+        <form class="form" action="Script.php" method="POST">
         <section class="campo_usuario">
                 <label for="nome">Nome</label>
                 <input type="text" required name="nome" placeholder="Rogério Santos"><br><br>
@@ -30,11 +30,10 @@
            
                 <label for="cep" >CEP</label>
                 <input type="tel" required name="cep" minlength="8" maxlength="10" placeholder="12.345-678" ><br><br>
-                
                 <label for="queixa" placeholder="queixa">Queixa</label>
                     <select required name="queixa">
                         <option placeholder="" disabled selected>Selecione...</option>
-                        <option placeholder="queixa1">Vazamento de esgoto</option>
+                        <option placeholder=="queixa1">Vazamento de esgoto</option>
                         <option placeholder="queixa2">Falta de água</option>
                         <option placeholder="queixa3">Cano estourado</option>
                         <option placeholder="queixa4">Outros</option>
@@ -53,8 +52,11 @@
                 <input type="file" name="foto"><br><br> <!-- ver dps - multiplos arquivos-->
 
                 <label for="descricao">Descrição</label>
-                <textarea cols=50 rows=3 name="descrição" maxlength="500" placeholder="Resumo do problema a se relatar"></textarea><br><br>
+                <textarea cols=50 rows=6 name="descrição" maxlength="500" placeholder="Resumo do problema a se relatar"></textarea><br><br>
 
+            
+               
+                
         </section>
         <section class="submit">
             <input type="submit" value="Submit">
